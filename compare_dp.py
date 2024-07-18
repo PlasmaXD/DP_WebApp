@@ -48,6 +48,8 @@ def analyze_data(data):
     stdev = np.std(data)
     return mean, variance, stdev
 
+plt.rcParams['font.family'] = 'IPAexGothic'  # 日本語フォントの設定
+
 def plot_histogram(data, title):
     plt.figure(figsize=(10, 4))
     plt.hist(data, bins=30, alpha=0.75, color='blue')
